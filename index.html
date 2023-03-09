@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" >
+         Informe um numero:<br/>
+        <input type="text" id="numero" >
+        <br/><br/>
+        <button onclick="calcula();return false;">Calcular</button>
+        <!-- <input type="submit" value="Verificar"> -->
+    <div id="resposta"></div>
+    </form>
+
+    
+</body>
+</html>
+<script>
+    
+    function calcula(){
+        let valor = parseInt(document.getElementById("numero").value);
+        
+        let resto = valor % 2;
+    if( resto == 0) { 
+        
+        let respostaSite = "O numero informado é : " + valor + " , então esse numero informado é par."      
+        resposta.innerHTML = respostaSite;
+    } else {
+        let respostaSite = "O numero informado é : " + valor + " , então esse numero informado é ímpar."; 
+        resposta.innerHTML = respostaSite;
+        
+    }
+    }
+        
+    </script>
